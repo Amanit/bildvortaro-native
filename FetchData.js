@@ -4,9 +4,9 @@ const REQUEST_URL = 'http://bildvortaro.com/api/word';
 
 class FetchData {
   list(filter='', dataSource, cb) {
-    var url = `${REQUEST_URL}/?format=json`
+    var url = `${REQUEST_URL}/?format=json`;
     if(filter){
-      url = `${url}/&search=${filter}`
+      url = `${url}&search=${filter}`;
     }
 
     fetch(url)
@@ -35,7 +35,7 @@ class FetchData {
       .done();
   }
   load_tail(nextUrl, dataSource, cb) {
-    
+
     fetch(nextUrl)
       .then((response) => response.json())
       .then((responseData) => {
