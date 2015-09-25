@@ -1,5 +1,5 @@
 'use strict'
-const REQUEST_URL = 'http://bildvortaro.com/api/word';
+var REQUEST_URL = 'http://bildvortaro.com/api/word';
 
 
 class FetchData {
